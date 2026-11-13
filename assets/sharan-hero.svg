@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 680" width="100%" height="100%">
+  <defs>
+    <!-- Filter for subtle drop shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1c1b1a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Red Hand-Drawn Doodle Squiggles behind & around the silhouette (Exact Sruthi Vibe) -->
+    <g stroke="#e33529" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Left side wavy sketched energy lines -->
+      <path d="M 120 220 Q 90 290 115 360 T 100 480 Q 90 560 120 620" />
+      <path d="M 140 260 Q 120 330 135 410 T 115 520" stroke-width="2.5" />
+      <path d="M 155 180 Q 130 210 135 240" stroke-dasharray="2 6" />
+
+      <!-- Cute little red doodle flower/star on left shoulder -->
+      <g transform="translate(130, 230)">
+        <path d="M 0 -12 L 0 12 M -12 0 L 12 0 M -8 -8 L 8 8 M -8 8 L 8 -8" stroke-width="2.5"/>
+      </g>
+      <g transform="translate(150, 290) scale(0.7)">
+        <path d="M 0 -12 L 0 12 M -12 0 L 12 0 M -8 -8 L 8 8 M -8 8 L 8 -8" stroke-width="2.5"/>
+      </g>
+
+      <!-- Right side wavy doodle energy lines -->
+      <path d="M 380 240 Q 415 310 395 390 T 410 500 Q 420 580 390 640" />
+      <path d="M 360 290 Q 390 360 380 440 T 395 550" stroke-width="2.5" />
+      
+      <!-- Right shoulder doodle accent -->
+      <g transform="translate(375, 340) scale(0.8)">
+        <path d="M 0 -12 L 0 12 M -12 0 L 12 0 M -8 -8 L 8 8 M -8 8 L 8 -8" stroke-width="2.5"/>
+      </g>
+      <!-- Sketched outline accents along the arms -->
+      <path d="M 130 520 Q 110 560 130 600" />
+      <path d="M 370 480 Q 390 530 380 590" />
+    </g>
+
+    <!-- Cutout Character Body (Warm, stylized human developer taking selfie/coding) -->
+    <!-- Denim Jeans Bottom -->
+    <path d="M 135 520 L 365 520 L 350 680 L 150 680 Z" fill="#8baac9" stroke="#1c1b1a" stroke-width="2.5"/>
+    <path d="M 250 540 L 250 680" stroke="#5d7f9e" stroke-width="2" stroke-dasharray="4 4"/>
+    <!-- Jeans belt / waistband -->
+    <rect x="135" y="515" width="230" height="20" rx="3" fill="#6d8dae" stroke="#1c1b1a" stroke-width="2"/>
+    <rect x="235" y="518" width="30" height="14" rx="2" fill="#c2a649" stroke="#1c1b1a" stroke-width="1.5"/>
+
+    <!-- White Crisp Linen Shirt (just like in the photo!) -->
+    <path d="M 130 450 C 130 310 160 270 200 245 L 250 290 L 300 245 C 340 270 370 310 370 450 L 365 525 L 135 525 Z" fill="#fcfcfc" stroke="#1c1b1a" stroke-width="2.5"/>
+    <!-- Shirt Collar -->
+    <polygon points="200,245 235,300 250,265" fill="#ffffff" stroke="#1c1b1a" stroke-width="2"/>
+    <polygon points="300,245 265,300 250,265" fill="#ffffff" stroke="#1c1b1a" stroke-width="2"/>
+    <!-- Shirt Placket & Buttons -->
+    <line x1="250" y1="290" x2="250" y2="520" stroke="#d5d5cd" stroke-width="2"/>
+    <circle cx="250" cy="330" r="3" fill="#1c1b1a"/>
+    <circle cx="250" cy="380" r="3" fill="#1c1b1a"/>
+    <circle cx="250" cy="430" r="3" fill="#1c1b1a"/>
+    <circle cx="250" cy="480" r="3" fill="#1c1b1a"/>
+
+    <!-- Left Arm & Hand in Pocket -->
+    <path d="M 130 380 Q 110 460 145 520 L 165 520 Q 135 460 155 380 Z" fill="#ffffff" stroke="#1c1b1a" stroke-width="2"/>
+    <path d="M 140 515 C 135 530 145 550 160 550 C 170 550 175 535 170 515 Z" fill="#dfaa84" stroke="#1c1b1a" stroke-width="2"/>
+
+    <!-- Right Arm holding Red Phone for Selfie -->
+    <path d="M 360 360 Q 380 430 340 460 L 320 440 Q 355 410 345 360 Z" fill="#ffffff" stroke="#1c1b1a" stroke-width="2"/>
+    <!-- Forearm leading up to phone -->
+    <path d="M 330 450 Q 355 420 330 340 L 350 330 Q 380 420 345 465 Z" fill="#dfaa84" stroke="#1c1b1a" stroke-width="2"/>
+
+    <!-- Smartwatch on right wrist -->
+    <rect x="330" y="420" width="22" height="14" rx="4" fill="#1c1b1a" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- Hand holding phone -->
+    <circle cx="330" cy="330" r="14" fill="#dfaa84" stroke="#1c1b1a" stroke-width="1.8"/>
+    <!-- Cute Red Smartphone (Exact match to the photo!) -->
+    <rect x="315" y="270" width="46" height="82" rx="10" fill="#e33529" stroke="#1c1b1a" stroke-width="2.5"/>
+    <circle cx="338" cy="285" r="8" fill="#c0261b" stroke="#1c1b1a" stroke-width="1.5"/>
+    <circle cx="335" cy="283" r="3" fill="#1c1b1a"/>
+    <circle cx="343" cy="298" r="4" fill="#c0261b" stroke="#1c1b1a" stroke-width="1.2"/>
+    <!-- Camera flash -->
+    <circle cx="326" cy="298" r="2.5" fill="#ffeb3b"/>
+
+    <!-- Neck -->
+    <rect x="235" y="200" width="30" height="48" rx="6" fill="#c69371"/>
+
+    <!-- Head & Expressive Friendly Face -->
+    <ellipse cx="250" cy="180" rx="42" ry="48" fill="#dfaa84" stroke="#1c1b1a" stroke-width="2"/>
+
+    <!-- Curly / Wavy Voluminous Dark Hair (Like in photo) -->
+    <path d="M 200 190 C 180 120 220 80 270 85 C 320 90 330 140 310 190 C 330 160 325 110 280 100 C 235 90 195 130 205 180 C 180 200 185 280 215 320 C 205 270 200 230 205 200 Z" fill="#1c1b1a"/>
+    <path d="M 290 120 C 330 130 350 200 340 280 C 335 240 325 200 310 170 Z" fill="#1c1b1a"/>
+    <!-- Hair Volume curls -->
+    <circle cx="215" cy="125" r="22" fill="#1c1b1a"/>
+    <circle cx="250" cy="105" r="24" fill="#1c1b1a"/>
+    <circle cx="285" cy="115" r="22" fill="#1c1b1a"/>
+    <circle cx="195" cy="165" r="20" fill="#1c1b1a"/>
+    <circle cx="190" cy="210" r="18" fill="#1c1b1a"/>
+    <circle cx="195" cy="255" r="16" fill="#1c1b1a"/>
+    <circle cx="315" cy="155" r="18" fill="#1c1b1a"/>
+
+    <!-- Warm Cheerful Smile & Glasses -->
+    <!-- Gold / Dark Frame Glasses -->
+    <rect x="222" y="160" width="22" height="18" rx="4" fill="none" stroke="#1c1b1a" stroke-width="2"/>
+    <rect x="256" y="160" width="22" height="18" rx="4" fill="none" stroke="#1c1b1a" stroke-width="2"/>
+    <line x1="244" y1="168" x2="256" y2="168" stroke="#1c1b1a" stroke-width="2"/>
+    <!-- Smiling Eyes behind glasses -->
+    <path d="M 226 169 Q 233 164 240 169" stroke="#1c1b1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 260 169 Q 267 164 274 169" stroke="#1c1b1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Nose -->
+    <path d="M 248 174 Q 252 182 248 185" stroke="#9e6d4c" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Big Friendly Smile -->
+    <path d="M 235 198 Q 250 214 265 198" stroke="#1c1b1a" stroke-width="2.5" fill="#b8453b" stroke-linecap="round"/>
+  </g>
+</svg>
+

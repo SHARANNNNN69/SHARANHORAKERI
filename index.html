@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARANNNN — CSE (AI) @ KLE Tech</title>
+  
+  <meta name="description" content="Portfolio of Sharan — 2nd Year Computer Science & AI Student. Machine Learning, Computer Vision, and Software Engineering.">
+  <meta property="og:title" content="SHARANNNN — Sharan Horakeri">
+  <meta property="og:description" content="CSE (AI) @ KLE Tech, Hubballi. Building AI and real software.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+
+  <div id="custom-cursor-dot" aria-hidden="true"></div>
+  <div id="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- Left Edge Pinned Badge (from screenshot) -->
+  <aside class="left-pinned-badge" aria-label="Portfolio badge">
+    <div class="badge-square-icon">S.</div>
+    <div class="badge-vertical-text">PORTFOLIO // 2026</div>
+  </aside>
+
+  <div class="ticker-tape-container" id="ticker-banner">
+    <div class="ticker-track" id="ticker-track">
+      <!-- Populated dynamically from config.js -->
+    </div>
+    <button class="ticker-close-btn" id="ticker-close-btn" aria-label="Dismiss banner">✕</button>
+  </div>
+
+  <div class="site-content">
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand-script-logo" data-cursor="hover">
+          <span>SHARANNNN</span>
+        </a>
+
+        <!-- Two Red Lines Hamburger Menu Button -->
+        <button class="nav-burger-lines" id="burger-menu-btn" aria-label="Toggle navigation menu" data-cursor="hover">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav-dropdown-drawer" id="nav-drawer" role="dialog" aria-modal="true">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase;">CHAPTER INDEX</span>
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">✕</button>
+      </div>
+
+      <ul class="drawer-links-list">
+        <li><a href="#hero" class="drawer-link">01 Introduction</a></li>
+        <li><a href="#about" class="drawer-link">02 About</a></li>
+        <li><a href="#education" class="drawer-link">03 Education</a></li>
+        <li><a href="#domain" class="drawer-link">04 Domains &amp; Skills</a></li>
+        <li><a href="#works" class="drawer-link">05 Works</a></li>
+        <li><a href="#resume" class="drawer-link">06 Resume</a></li>
+        <li><a href="#faq" class="drawer-link">07 FAQ</a></li>
+        <li><a href="#contact" class="drawer-link">08 Contact</a></li>
+      </ul>
+
+      <div>
+        <button class="header-theme-toggle" id="theme-toggle-btn" style="width: 100%; text-align: center; padding: 10px; font-weight: 700;">
+          TOGGLE THEME (CREAM / DARK)
+        </button>
+      </div>
+    </div>
+
+    <main>
+
+        <!-- Interactive 3D Neural Lattice Stage (Moves with Cursor & Drag) -->
+        <canvas id="hero-interactive-canvas" class="hero-interactive-canvas" aria-hidden="true"></canvas>
+
+        <div class="container hero-content-relative">
+          
+          <div class="hero-status-kicker">
+            <span class="status-indicator-dot"></span>
+            <span class="hero-kicker-text">CHAPTER 01 // CSE (AI) · KLE TECH · HUBBALLI</span>
+            <span class="hero-kicker-sep">/</span>
+            <span id="hero-live-clock" class="hero-live-clock">INDIA (IST) --:--:--</span>
+          </div>
+
+          <div class="hero-kinetic-block">
+            <div class="hero-kinetic-row hero-row-top">
+              <span class="hero-display-huge">HELLO</span>
+              <button type="button" class="hero-name-slot-btn" id="hero-name-slot" title="Click to personalize with your name!" data-cursor="hover">
+                <span>{{ your name</span><span class="slot-cursor-pipe">|</span><span> }}</span>
+              </button>
+            </div>
+
+            <div class="hero-kinetic-row hero-row-bottom">
+              <span class="hero-display-huge">MEET</span>
+              <h1 class="hero-display-huge hero-name-red">SHARANNNN</h1>
+            </div>
+          </div>
+
+          <div class="hero-bottom-grid">
+            <div class="hero-bio-column">
+              <p class="hero-statement-lead">
+                Creative mind. Engineer by craft. I study CSE (AI) at KLE Technological University, Hubballi. I build AI surveillance systems, computer vision tools, and software that solves real problems.
+              </p>
+              
+              <div class="hero-actions-row">
+                <a href="#works" class="hero-btn-solid" data-cursor="hover">
+                  Explore Selected Works ↓
+                </a>
+                <a href="#about" class="hero-btn-outline" data-cursor="hover">
+                  About Me ↓
+                </a>
+                <a href="#resume" class="hero-btn-outline" data-cursor="hover">
+                  Resume ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-hud-card" data-cursor="hover">
+              <div class="hud-header">
+                <span class="hud-live-beacon"></span>
+                <span class="hud-title">SYSTEM STATUS</span>
+                <span class="hud-tag">IDLE // 2026</span>
+              </div>
+              <div class="hud-row">
+                <span class="hud-k">FOCUS</span>
+                <span class="hud-v">Computer Vision &amp; Deep Learning</span>
+              </div>
+              <div class="hud-row">
+                <span class="hud-k">STATUS</span>
+                <span class="hud-v status-online">Open to Internships &amp; Projects</span>
+              </div>
+              <div class="hud-row">
+                <span class="hud-k">LATENCY</span>
+                <span class="hud-v">0.2ms · 60 FPS Canvas</span>
+              </div>
+              <div class="hud-row hud-interaction-hint">
+                <span class="hud-k">3D MESH</span>
+                <span class="hud-v hud-accent" id="hud-drag-hint">Drag canvas to rotate</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sfold-section" id="about">
+        <div class="container sfold-grid">
+          
+          <div class="sfold-copy">
+            <h2 class="sfold-head">I'M YOUR PERSON TO GET SH*T DONE</h2>
+            
+            <p class="sfold-body">
+              i study CSE (AI) at KLE Technological University, Hubballi. i've built AI surveillance systems, trained computer vision models, and shipped billing software for real businesses. i've sat with hard problems and figured them out — in code and in life.
+              <br><br>
+              <strong>whenever, wherever, i don't stop until it works.</strong>
+            </p>
+
+            <a href="#contact" class="sfold-btn" data-cursor="hover">
+              [ put me to work ]
+            </a>
+          </div>
+
+          <!-- Giant Typography Skills Roll -->
+          <ul class="sfold-list">
+            <li class="sfold-item" data-cursor="hover">computer vision</li>
+            <li class="sfold-item" data-cursor="hover">local AI systems</li>
+            <li class="sfold-item" data-cursor="hover">algorithms &amp; dsa</li>
+            <li class="sfold-item" data-cursor="hover">python &amp; opencv</li>
+            <li class="sfold-item" data-cursor="hover">systems &amp; c++</li>
+            <li class="sfold-item" data-cursor="hover">real software</li>
+          </ul>
+
+        </div>
+      </section>
+
+      <div class="container">
+
+        <!-- 5. EDUCATION SECTION -->
+        <section class="section" id="education">
+          <div class="section-head">
+            <span class="section-tag">03 // Academic Track</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="education-grid" id="education-container">
+            <!-- Populated dynamically from config.js -->
+          </div>
+        </section>
+
+        <!-- 6. DOMAIN & TECHNICAL SKILLS SECTION -->
+        <section class="section" id="domain">
+          <div class="section-head">
+            <span class="section-tag">04 // Core Competencies</span>
+            <h2 class="section-title">Domains &amp; Skills</h2>
+          </div>
+
+          <div class="domain-grid" id="domain-container">
+            <!-- Populated dynamically from config.js -->
+          </div>
+        </section>
+
+        <!-- 7. WORKS / PROJECTS SECTION -->
+        <section class="section" id="works">
+          <div class="section-head">
+            <span class="section-tag">05 // Selected Projects</span>
+            <h2 class="section-title">Works</h2>
+          </div>
+
+          <div class="works-grid" id="works-container">
+            <!-- Populated dynamically from config.js -->
+          </div>
+        </section>
+
+        <!-- 8. RESUME / CV SECTION -->
+        <section class="section" id="resume">
+          <div class="section-head">
+            <span class="section-tag">06 // Official Dossier</span>
+            <h2 class="section-title">Resume &amp; CV</h2>
+          </div>
+
+          <div class="resume-box">
+            <div class="resume-info">
+              <h3>Download Official Resume</h3>
+              <p>
+                Review my academic credentials, coursework, technical domains, and hackathon projects. 
+                Formatted cleanly for engineering recruiters and research labs.
+              </p>
+
+              <ul class="resume-highlights">
+                <li>B.Tech in Computer Science &amp; AI (Year 2)</li>
+                <li>Hands-on experience in PyTorch, OpenCV, and Web Engineering</li>
+                <li>200+ LeetCode problems solved across Data Structures &amp; Algorithms</li>
+                <li>Open for Software Engineering and Machine Learning internships</li>
+              </ul>
+            </div>
+
+            <div class="resume-actions">
+              <button class="btn-primary" id="print-resume-btn" data-cursor="hover">
+                Print / Save as PDF 🖨️
+              </button>
+              <a href="mailto:srhorakeri@gmail.com?subject=Resume%20Inquiry%20-%20Sharan" class="btn-outline" data-cursor="hover">
+                Request Latest PDF via Email ✉
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. BEFORE YOU ASK... FAQ SECTION -->
+        <section class="section" id="faq">
+          <div class="section-head">
+            <span class="section-tag">07 // Principles &amp; FAQ</span>
+            <h2 class="section-title">before you ask . . .</h2>
+          </div>
+
+          <div class="faq-grid" id="faq-container">
+            <!-- Populated dynamically from config.js -->
+          </div>
+        </section>
+
+        <!-- 11. CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+          <span class="section-tag">08 // Say Hello</span>
+
+          <h2 class="contact-hero-heading">
+            i’m even better in conversation. <br>
+            <span style="color: var(--accent-cinnabar);">say hi.</span>
+          </h2>
+
+          <div class="contact-email-bar" data-cursor="copy">
+            <span class="contact-email-text">srhorakeri@gmail.com</span>
+            <button class="copy-btn-pill" id="copy-email-btn">copy email</button>
+          </div>
+
+          <div class="social-links-row">
+            <a href="https://github.com/SHARANNNNN69" target="_blank" rel="noopener noreferrer" class="social-link-item" data-cursor="open">GitHub</a>
+            <a href="https://in.linkedin.com/in/sharan-r-horakeri-013b83381" target="_blank" rel="noopener noreferrer" class="social-link-item" data-cursor="open">LinkedIn</a>
+            <a href="https://x.com/sharanhorakeri" target="_blank" rel="noopener noreferrer" class="social-link-item" data-cursor="open">X / Twitter</a>
+            <a href="https://www.instagram.com/sharanhorakeri" target="_blank" rel="noopener noreferrer" class="social-link-item" data-cursor="open">Instagram</a>
+            <a href="mailto:srhorakeri@gmail.com" class="social-link-item" data-cursor="hover">Email</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- 12. Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          handmade with 🫀 and 🧠 by Sharan
+        </div>
+        <div>
+          &copy; 2026 all rights reserved.
+        </div>
+        <div>
+          f*ck mediocre templates
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice">Email copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="./js/config.js"></script>
+  <script src="./js/hero-canvas.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
